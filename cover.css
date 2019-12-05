@@ -79,7 +79,9 @@ body {
     float: right;
   }
 }
-
+.body {
+    padding: 0 0 0 28%;
+}
 
 /*
  * Cover
@@ -92,12 +94,10 @@ body {
   font-weight: 700;
 }
 
-
 /*
  * Footer
  */
 .mastfoot {
+    text-align: center;
   color: rgba(255, 255, 255, .5);
 }
-
-
