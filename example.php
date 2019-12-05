@@ -14,10 +14,7 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
         <div class="inner">
-            <h3 class="masthead-brand">API</h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Accueil</a>
-            </nav>
+                <a class="nav-link active" href="index.php">Accueil</a>
         </div>
     </header>
 
@@ -48,7 +45,7 @@ echo 'La température actuelle à '.$weather->response->location->name.', '
 
 echo '<br><br>';
 
-?><u><?php echo 'Informations sur le vent :';?></u><br><br><?php echo 'La Vitesse du vent est de ' .$weather->response->current->wind_speed. 'Km/h et un vent qui vient du ' .$weather->response->current->wind_dir.' avec un un axe de '.$weather->response->current->wind_degree.'°';
+?><u><?php echo '<b>Informations sur le vent :</b>';?></u><br><br><?php echo 'La Vitesse du vent est de ' .$weather->response->current->wind_speed. 'Km/h et un vent qui vient du ' .$weather->response->current->wind_dir.' avec un un axe de '.$weather->response->current->wind_degree.'°';
 ?><br><br><?php echo 'L\'indice UV est de '.$weather->response->current->uv_index;
 
 ?>
@@ -63,7 +60,7 @@ echo '<br><br>';
   
   <script  type="text/javascript"  charset="utf-8">  
        var ville = <?php echo json_encode($ville); ?>;
-      _aqiFeed({  container:"city-aqi-container",  city: ville, display:"La qualité de l'air à %cityname est de %aqi<br><small>on  %date</small>", lang:"fr" });
+      _aqiFeed({  container:"city-aqi-container",  city: ville, display:"<br><br>La qualité de l'air à <b>%cityname</b> est de %aqi<br><small>on  %date</small>", lang:"fr" });
         
   </script>
 </div>

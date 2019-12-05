@@ -101,3 +101,6 @@ body {
     text-align: center;
   color: rgba(255, 255, 255, .5);
 }
+.inner {
+  text-align: center;
+}
