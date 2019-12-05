@@ -31,7 +31,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
-      <h3 class="masthead-brand">API</h3>
+      <h3 class="masthead-brand">Météo</h3>
       <nav class="nav nav-masthead justify-content-center">
         <a class="nav-link active" href="#">Accueil</a>
       </nav>
@@ -43,7 +43,7 @@
     <p class="lead">
     <form action="example.php" method="post">
 Entrez la ville pour obtenir la météo actuelle : <input type="text" name="meteo" />
-<input type="submit" value="valider" />
+<input class="btn btn-success" type="submit" value="Rechercher">
     </p>
   </main>
 
